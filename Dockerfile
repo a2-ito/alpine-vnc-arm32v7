@@ -1,5 +1,7 @@
 FROM arm32v7/alpine:3.10
 
+COPY qemu-arm-static /usr/bin
+
 # add repository
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 
